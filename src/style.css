@@ -1,0 +1,19 @@
+* { box-sizing: border-box }
+body { margin: 0; font: 16px system-ui, sans-serif; background: #f6f7f6; color: #111 }
+main { max-width: 480px; margin: 0 auto; padding: 16px 16px 120px; padding-top: max(16px, env(safe-area-inset-top)) }
+h1 { margin: 0 0 12px }
+.totals { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 16px }
+.totals div { background: #fff; border-radius: 12px; padding: 12px 4px; text-align: center }
+.totals b { display: block; font-size: 1.1rem }
+.totals span { font-size: .75rem; color: #666 }
+article { background: #fff; border-radius: 12px; padding: 12px 16px; margin-bottom: 10px }
+article header { display: flex; justify-content: space-between; align-items: center }
+article h3 { margin: 0 }
+article p { margin: 6px 0 0; font-size: .9rem }
+.items { color: #666 }
+article button { border: 0; background: none; font-size: 1.5rem; color: #999; min-width: 44px; min-height: 44px }
+.err { color: #b91c1c }
+.fab { position: fixed; left: 50%; transform: translateX(-50%); bottom: max(24px, env(safe-area-inset-bottom));
+  background: #16a34a; color: #fff; padding: 16px 28px; border-radius: 999px; font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25); cursor: pointer }
+.fab.busy { background: #6b7280 }
